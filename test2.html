@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tryRemoveFromArray</title>
+</head>
+<body>
+<script>
+
+    var array = ['lemon', 'apple', 'banana', 'grapes', 'kiwi', 'coconut'];
+    var newArray = [];
+
+    function tryRemoveFromArray(arr, ind) {
+        if (ind < 0 || ind > arr.length) {
+            document.write("Index is not valid");
+        } else {
+            for (let i = 0; i < arr.length; i++) {
+                if (ind !== i) {
+                    newArray.push(arr[i]);
+                }
+            }
+            document.write("Chuoi moi sau khi loai phan tu la: " + newArray);
+        }
+    }
+
+    var index = parseInt(prompt("Nhap vi tri phan tu muon xoa"));
+    tryRemoveFromArray(array, index);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>findMinScore</title>
+</head>
+<body>
+<script>
+    ////mang chua danh sach diem thi tieng nga thang diem 100 cua cac ban////////////
+    var score = [78, 67, 87, 90, 97, 57, 39, 45, 50, 30, 60, 70, 80, 88, 90, 92, 91, 92];
+
+
+    //////ham tim ra so diem thap nhat/////////
+    function findMinScore(arr) {
+        var minScore = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < minScore) {
+                minScore = arr[i];
+            }
+        }
+        document.write(minScore + " la diem so thap nhat trong lop");
+    }
+
+    /////goi ham va truyen tham so/////////
+    findMinScore(score);
+</script>
+</body>
+</html>
